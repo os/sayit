@@ -82,14 +82,14 @@ def main():
         sys.exit()
     
     if len(args) > 1:
-        print 'Unknown arguments: ' % ', '.join(args[1:])
+        print 'Invalid arguments: ' % ', '.join(args[1:])
         sys.exit()
     
     if options.language == 'en':
         options.language = 'sk'
     
     if options.language not in LANGUAGE_CODES:
-        print 'Unknown language: %s' % options.language
+        print 'Invalid language: %s' % options.language
         sys.exit()
     
     say(args.pop(), options)

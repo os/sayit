@@ -4,7 +4,7 @@ sayit
 Installation
 ------------
 
-    apt-get install sox libsox-fmt-all
+    sudo apt-get install sox libsox-fmt-all
     pip install -r requirements.txt
 
 Usage
